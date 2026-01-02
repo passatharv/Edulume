@@ -391,12 +391,12 @@ POST /api/discussions/answers/:answerId/best
 - Authentication: Yes
 - Response (200): marks an answer as best (only discussion author)
 
-GET /api/discussions/notifications
+GET /api/notifications
 - Authentication: Yes
 - Query: `page`, `limit`
 - Response (200): notifications list with pagination
 
-PUT /api/discussions/notifications/:id/read
+PUT /api/notifications/:id/read
 - Authentication: Yes
 - Response (200): marks notification as read
 
@@ -480,5 +480,5 @@ Notes
 - Error responses use standard HTTP status codes and return JSON with an `error` or `message` field.
 - For endpoints that accept arrays (e.g., `chapters`, `tags`, `images`), supply JSON arrays.
 
-If you want, I can add example curl commands for selected endpoints or generate OpenAPI/Swagger YAML from this spec.
+
 
